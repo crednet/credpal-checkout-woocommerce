@@ -55,7 +55,7 @@ function credpal_pay_init_gateway_class() {
          */
         public function __construct() {
             $this->id = 'credpal_pay';
-            $this->icon = plugins_url('/images/credpal-logo.png', __FILE__);
+            $this->icon = plugins_url('/images/credpal-checkOut.png', __FILE__);
             $this->has_fields = true;
             $this->method_title = 'CredPal BNPL';
             $this->method_description = 'Spread payment using Credpal';
