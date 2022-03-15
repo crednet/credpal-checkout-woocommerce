@@ -152,6 +152,9 @@ function credpal_pay_init_gateway_class() {
             wp_enqueue_script( 'credpal_pay_js', 'https://corporate-loans.s3.amazonaws.com/minifiedJS/index.js' );
             wp_enqueue_script('wc_credpal_pay_js', plugins_url('/assets/js/credpal.js', __FILE__));
 
+			$user = $order->get_address();
+			$user['phone_no'] = $user['phone'];
+			
             $params = [
                 'amount' => $order->get_total(),
                 'merchant_id' => $this->merchantId,
@@ -159,7 +162,8 @@ function credpal_pay_init_gateway_class() {
                 'order_status' => $order->get_status(),
                 'order_id' => $order->get_id(),
                 'products' => $products,
-                'redirect_url' => $this->get_return_url( $order )
+                'redirect_url' => $this->get_return_url( $order ),
+                'user' => $user,
             ];
 
             wp_localize_script( 'wc_credpal_pay_js', 'credpal_pay_data', $params);
