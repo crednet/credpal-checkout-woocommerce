@@ -6,8 +6,8 @@ Plugin URI: https://credpal.com
 Tags: payment, pay, credpal, credpalpay
 Requires at least: 4.8
 Tested up to: 5.8
-Stable tag: 1.0.0
-Version: 1.0.0
+Stable tag: 1.1.0
+Version: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,9 @@ Your CredPal Pay Merchant Id. Available within the https://retail.credpal.com
 == Changelog ==
 = 1.0.0 - September 1, 2021
 * First release
+
+= 1.0.0 - March 15, 2022
+* Added user biiling address to payload sent to the checkout frontend app
 
 == Frequently Asked Questions ==
 How do I get my Merchant Id
