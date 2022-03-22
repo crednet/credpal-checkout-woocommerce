@@ -1,4 +1,4 @@
-# credpal-checkout-woocommerce
+# CredPal Checkout Woocommerce
 Credpal BNPL(Buy Now Pay Later) plugin for woocommerce
 
 
