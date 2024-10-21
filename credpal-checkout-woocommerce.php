@@ -149,7 +149,7 @@ function credpal_pay_init_gateway_class() {
                 return;
             }
 
-            wp_enqueue_script( 'credpal_pay_js', 'https://corporate-loans.s3.amazonaws.com/minifiedJS/index.js' );
+            wp_enqueue_script( 'credpal_pay_js', 'https://corporate-loans.obs.sa-brazil-1.myhuaweicloud.com/minifiedJS/index.js' );
             wp_enqueue_script('wc_credpal_pay_js', plugins_url('/assets/js/credpal.js', __FILE__));
 
 			$user = $order->get_address();
